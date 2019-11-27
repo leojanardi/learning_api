@@ -48,7 +48,7 @@ exports.list = async (req, res, next) =>
 {
     try
     {
-        let token = req.headers['x-rockeseat-hack'];
+        let token = req.headers['x-rocketseat-hack'];
         let userId = req['query'].data;
 
         console.log("(helpController)   [ Validando token... ]")
@@ -101,7 +101,7 @@ exports.ask = async (req, res, next) =>
 {
     try
     {
-        let token = req.headers['x-rockeseat-hack'];
+        let token = req.headers['x-rocketseat-hack'];
         let data = req['body'];
 
         console.log("(helpController)   [ Validando token... ]")

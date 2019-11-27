@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors')
 var app = express();
 
 //Routes
@@ -17,7 +18,9 @@ var server = app.listen(4000, function() {
 });
 
 //Register Routes
+app.use(cors())
 app.use('/', indexRoute);
+
 
 module.exports = app;
 

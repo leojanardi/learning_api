@@ -62,7 +62,7 @@ exports.statistics = async (req, res, next) =>
 {
     try
     {
-        let token = req.headers['x-rockeseat-hack'];
+        let token = req.headers['x-rocketseat-hack'];
         let userId = req['query'].data;
 
         console.log("(userController)   [ Validando token... ]")
@@ -115,7 +115,7 @@ exports.theme = async (req, res, next) =>
 {
     try
     {
-        let token = req.headers['x-rockeseat-hack'];
+        let token = req.headers['x-rocketseat-hack'];
         let userId = req['query'].data;
 
         console.log("(userController)   [ Validando token... ]")
@@ -168,7 +168,7 @@ exports.team = async (req, res, next) =>
 {
     try
     {
-        let token = req.headers['x-rockeseat-hack'];
+        let token = req.headers['x-rocketseat-hack'];
         let userId = req['query'].data;
 
         console.log("(userController)   [ Validando token... ]")
