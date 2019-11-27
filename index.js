@@ -12,7 +12,9 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 
 //Porta que meu projeto irá rodar
-app.listen(4000);
+var server = app.listen(4000, function() {
+  console.log('Listening on port %d', server.address().port);
+});
 
 //Register Routes
 app.use('/', indexRoute);
